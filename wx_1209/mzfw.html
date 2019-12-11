@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>门诊服务</title>
+  <link rel="stylesheet" href="css/mui.min.css">
+  <link rel="stylesheet" href="css/wx_style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/rootResizeFont.js"></script>
+  <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="./js/TouchSlide.1.1.source.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <style>
+  .mui-popup{
+    overflow: visible !important;
+  }
+  .mui-popup-inner{
+  padding-top: 80px;
+  }
+  </style>
+</head>
+<body>
+  <header id="header" class="mui-bar mui-bar-nav">
+    <p class="mui-title">上海六一儿童医院丨<span class="nav_titile">门诊服务</span></p>
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <a id="icon-menu" class="mui-icon mui-icon-bars mui-pull-right"></a>
+  </header>
+  <div id="menu-wrapper" class="menu-wrapper hidden">
+    <div id="menu" class="menu">
+      <ul class="mui-table-view mui-table-view-inverted">
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./mzfw.html">住院服务</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./czxx1.html">出诊信息</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./ksjs.html">科室介绍</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./lxwm.html">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="menu-backdrop" class="menu-backdrop" style="opacity: 0;"></div>
+  <div class="nav-top"></div>
+  <div><img src="./images/bannner_wx.jpg" data-preview-src="" data-preview-group="1" /></div>
+  <div id="ksjs_01" class="ksjs ksjs_01">
+    <div class="hd ksjs_top clear ksjs_top_01">
+      <ul>
+        <li class="on">咨询</li>
+        <li id="alertBtn"  class="">挂号</li>
+        <li class="">就诊</li>
+        <li class="">取消、收费</li>
+      </ul>
+    </div>
+    <div class="bd">
+      <div class="mzfw_content" style="display: none;">
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_01.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">咨询服务台</span>
+                <p class="jtzn_p">有专职医务人员为您服务。您在我院就诊中有任何不明白的问题均可以直接咨询或提出服务要求。</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_02.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">大厅LED显示屏</span>
+                <p class="jtzn_p">可供您了解医院各科室专业、出诊专家、各项检查收费标准及药品价格等情况。</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="mzfw_content" style="display: none;">
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_02.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">普通挂号</span>
+                <p class="jtzn_p">当您挂号时，您有权请挂号人员向您提供当天各科专家、专科出诊情况；您有权选择您最需要、最信任的专家或专科医生为您诊治。同时我们会主动为您建立、填写医疗病历和门诊手册。</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_04.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">网络预约挂号</span>
+                <p class="jtzn_p">如果您已经在网上挂号，请到导诊台出示您的身份凭证（挂号时留下的手机号以及身份证等），无需重复挂号，填写医疗病例和门诊手册之后，即可为您安排就诊。</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="mzfw_content" style="display: none;">
+        <div class="mui-card" >
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear" style="height: 100px;" >
+              <div class="left_img"><img class="fl" src="./images/ts_02.jpg"></div>
+              <div class="right_tit"  style="margin-top: 10px;"> 
+                <span class="span_mx color_01">门诊时间</span>
+                <p class="jtzn_p">上午 8:00-12：00 下午 2:00-5:00</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_03.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">注意事项一</span>
+                <p class="jtzn_p">医生在为您诊治时，如果您对检查、治疗、诊断有任何疑问，可向医生咨询。</p> 
+              </div>      
+            </div>
+          </div>
+        </div> 
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_03.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">注意事项二</span>
+                <p class="jtzn_p">第一次来我院就诊的医保病人，应凭医保证件，建立门诊病历，为您以后的报销提供方便。</p> 
+              </div>      
+            </div>
+          </div>
+        </div>
+        <div class="mui-card">
+          <div class="mui-card-content">
+            <div class="mui-card-content-inner clear">
+              <div class="left_img"><img class="fl" src="./images/ts_03.jpg"></div>
+              <div class="right_tit"> 
+                <span class="span_mx color_01">注意事项三</span>
+                <p class="jtzn_p">请您主动配合医师执行医保、公费医疗、大病统筹等用药规定及报销。</p> 
+              </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mzfw_content" style="display: none;">
+          <div class="mui-card">
+            <div class="mui-card-content">
+              <div class="mui-card-content-inner clear">
+                <div class="left_img"><img class="fl" src="./images/ts_03.jpg"></div>
+                <div class="right_tit"> 
+                  <span class="span_mx color_01">注意事项一</span>
+                  <p class="jtzn_p">划价、收费、取药均在一楼门诊大厅。</p> 
+                </div>      
+              </div>
+            </div>
+          </div> 
+          <div class="mui-card">
+            <div class="mui-card-content">
+              <div class="mui-card-content-inner clear">
+                <div class="left_img"><img class="fl" src="./images/ts_03.jpg"></div>
+                <div class="right_tit"> 
+                  <span class="span_mx color_01">注意事项二</span>
+                  <p class="jtzn_p">所有收费均按照上海市物价局标准执行,所有收费公开透明并在大厅进行公示,杜绝多收费、乱收费等情况。</p> 
+                </div>      
+              </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+  </div>
+  <div class="footer-img">
+    <div class="clear wximg_01">
+      <ul>
+        <li><img src="./images/wximg_01.jpg" data-preview-src="" data-preview-group="1" ></li>
+        <li><img src="./images/wximg_02.jpg" data-preview-src="" data-preview-group="1" ></li>
+        <li><img src="./images/wximg_03.jpg" data-preview-src="" data-preview-group="1" ></li>
+      </ul>
+    </div>
+    <div class="clear wximg_02">
+      <ul>
+        <li><img src="./images/wximg_04.jpg" data-preview-src="" data-preview-group="1" ></li>
+        <li><img src="./images/wximg_05.jpg" data-preview-src="" data-preview-group="1" ></li>
+        <li><img src="./images/wximg_06.jpg" data-preview-src="" data-preview-group="1" ></li>
+        <li><img src="./images/wximg_07.jpg" data-preview-src="" data-preview-group="1" ></li>
+      </ul>
+    </div>
+  </div>
+  <a id="tiaozhuan" href="javascript: openZoosUrl('chatwin');" target="_self"><div class="zxzx" style="margin-bottom: 30px;">我要在线咨询</div></a>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.zoom.js"></script>
+<script src="js/mui.previewimage.js"></script>
+<!-- <script src="js/TouchSlide.1.1.source.js"></script> -->
+<script>
+  // TouchSlide({ slideCell:"#ksjs_01",effect:"leftLoop" }); 
+  jQuery("#ksjs_01").slide({
+    mainCell: ".bd",
+    trigger: "click",
+    autoPlay: false
+    // interTime: 5000
+  });
+</script>
+
+ 
+
+<script>
+  mui('body').on('tap','#tiaozhuan',function(){
+    window.top.location.href=this.href;
+  });
+  mui.previewImage();
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  var menuWrapper = document.getElementById("menu-wrapper");
+  var menu = document.getElementById("menu");
+  var menuWrapperClassList = menuWrapper.classList;
+  var backdrop = document.getElementById("menu-backdrop");
+  var info = document.getElementById("info");
+  var alertBtn = document.getElementById("alertBtn")
+  // document.getElementById("alertBtn").addEventListener('tap', function() {
+	// 			mui.alert('欢迎使用Hello MUI', 'Hello MUI', function() {
+
+	// 			});
+	// 		});
+
+  
+    document.getElementById("alertBtn").addEventListener('tap', function() {
+      setTimeout(function(){
+				mui.alert('挂号时，请主动出示您的医保卡和病历，以便挂号员能尽快的为您挂号、及时就诊。', "<div class='ti_img'><img src='./images/ts_icon.png'></div><p class='wxts'>温馨提示</p>", function() {
+				}); 
+        },100)
+			});
+
+  backdrop.addEventListener('tap', toggleMenu);
+  // document.getElementById("menu-btn").addEventListener('tap', toggleMenu);
+  document.getElementById("icon-menu").addEventListener('tap',toggleMenu)
+  //下沉菜单中的点击事件
+  // mui('#menu').on('tap', 'a', function() {
+  //   toggleMenu();
+  //   info.innerHTML = '你已选择：'+this.innerHTML;
+  // });
+  var busying = false;
+
+  function toggleMenu() {
+    if (busying) {
+      return;
+    }
+    busying = true;
+    if (menuWrapperClassList.contains('mui-active')) {
+      document.body.classList.remove('menu-open');
+      menuWrapper.className = 'menu-wrapper fade-out-up animated';
+      menu.className = 'menu bounce-out-up animated';
+      setTimeout(function() {
+        backdrop.style.opacity = 0;
+        menuWrapper.classList.add('hidden');
+      }, 500);
+    } else {
+      document.body.classList.add('menu-open');
+      menuWrapper.className = 'menu-wrapper fade-in-down animated mui-active';
+      menu.className = 'menu bounce-in-down animated';
+      backdrop.style.opacity = 1;
+    }
+    setTimeout(function() {
+      busying = false;
+    }, 500);
+  }
+</script>
+<script language='javascript' src='http://pgt.zoosnet.net/JS/LsJS.aspx?siteid=PGT79084753&float=0&lng=cn'></script>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>联系我们</title>
+  <link rel="stylesheet" href="css/mui.min.css">
+  <link rel="stylesheet" href="css/wx_style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/rootResizeFont.js"></script>
+  <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="./js/TouchSlide.1.1.source.js"></script>
+  <script src="./js/swiper.min.js"></script>
+
+</head>
+<body>
+  <header id="header" class="mui-bar mui-bar-nav">
+    <p class="mui-title">上海六一儿童医院丨<span class="nav_titile">出诊信息</span></p>
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <a id="icon-menu" class="mui-icon mui-icon-bars mui-pull-right"></a>
+  </header>
+  <div id="menu-wrapper" class="menu-wrapper hidden">
+    <div id="menu" class="menu">
+      <ul class="mui-table-view mui-table-view-inverted">
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./mzfw.html">门诊服务</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./mzfw.html">住院服务</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./ksjs.html">科室介绍</a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a id="tiaozhuan" href="./czxx1.html">出诊信息</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="menu-backdrop" class="menu-backdrop" style="opacity: 0;"></div>
+  <div class="nav-top"></div>
+  <div><img src="./images/yydz_wx.jpg" data-preview-src="" data-preview-group="1" /></div>
+
+  <div class="mui-card">
+    <div class="mui-card-content">
+      <div class="mui-card-content-inner">
+          <span class="mui-icon mui-icon-location" class="hnk" style="color:#e95105"></span>
+          <h4 class="hnk">医院地址：</h4>上海市闸北区宝山路455号(地铁3号4号线宝山路站下车1号门出口往北走几分钟即到)
+      </div>
+    </div>
+  </div>
+  <div class="mui-card">
+    <div class="mui-card-content" style="border-bottom: 1px solid #ddd;">
+      <div class="mui-card-content-inner">
+        <div class="bus_icon hnk">
+          <img src="./images/bus_icon.jpg" alt="">
+        </div>
+        <h4 class="hnk">交通路线指南：</h4>
+        <p class="jtzn_p"><span>1.轨道交通：</span>地铁3号线、4号线，宝山路站下</p>
+      </div>
+    </div>
+    <div class="mui-card-content" style="border-bottom: 1px solid #ddd;">
+      <div class="mui-card-content-inner">
+          <p class="jtzn_p"><span>2.公交：</span>18路, 66路, 302路, 306路, 310路, 318路, 329路, 502路, 537路, 952路, 962路至宝山路鸿兴路站下。<span>（注：市内公交变化较大，仅供参考!）</span></p>
+      </div>
+    </div>
+    <div class="mui-card-content" style="border-bottom: 1px solid #ddd;">
+      <div class="mui-card-content-inner">
+          <p class="jtzn_p"><span>3.上海火车站:</span>从上海火车站乘地铁3号4号线宝山路站下车1号门出口往北走几分钟即到</p>
+      </div>
+    </div>
+    <div class="mui-card-content" style="border-bottom: 1px solid #ddd;">
+      <div class="mui-card-content-inner">
+          <p class="jtzn_p"><span>4.虹桥机场：</span>步行至虹桥1号航站楼(约730米) ，乘坐地铁10号线，在虹桥路下车(6站) ，步行至虹桥路(约120米) ，乘坐地铁4号线或3号线，在宝山路下车(8站)，步行往北走几分钟至上海六一儿童医院(约700米)</p>
+      </div>
+    </div>
+    <div class="mui-card-content">
+      <div class="mui-card-content-inner">
+          <p class="jtzn_p"><span>5.浦东机场：</span>步行至浦东国际机场(约410米) ，乘坐地铁2号线，在世纪大道下车(14站) ，乘坐地铁4号线，在宝山路下车(6站) ，步行往北走几分钟至上海六一儿童医院(约700米)</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <a id="tiaozhuan"  href="javascript: openZoosUrl('chatwin');" target="_self"><div class="zxzx" style="margin-bottom: 30px;">我要在线挂号</div></a>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.zoom.js"></script>
+<script src="js/mui.previewimage.js"></script>
+<!-- <script src="js/TouchSlide.1.1.source.js"></script> -->
+
+
+ 
+
+<script>
+  mui('body').on('tap','#tiaozhuan',function(){
+    window.top.location.href=this.href;
+  });
+  mui.previewImage();
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  var menuWrapper = document.getElementById("menu-wrapper");
+  var menu = document.getElementById("menu");
+  var menuWrapperClassList = menuWrapper.classList;
+  var backdrop = document.getElementById("menu-backdrop");
+  var info = document.getElementById("info");
+  
+  backdrop.addEventListener('tap', toggleMenu);
+  // document.getElementById("menu-btn").addEventListener('tap', toggleMenu);
+  document.getElementById("icon-menu").addEventListener('tap',toggleMenu)
+  //下沉菜单中的点击事件
+  // mui('#menu').on('tap', 'a', function() {
+  //   toggleMenu();
+  //   info.innerHTML = '你已选择：'+this.innerHTML;
+  // });
+  var busying = false;
+
+  function toggleMenu() {
+    if (busying) {
+      return;
+    }
+    busying = true;
+    if (menuWrapperClassList.contains('mui-active')) {
+      document.body.classList.remove('menu-open');
+      menuWrapper.className = 'menu-wrapper fade-out-up animated';
+      menu.className = 'menu bounce-out-up animated';
+      setTimeout(function() {
+        backdrop.style.opacity = 0;
+        menuWrapper.classList.add('hidden');
+      }, 500);
+    } else {
+      document.body.classList.add('menu-open');
+      menuWrapper.className = 'menu-wrapper fade-in-down animated mui-active';
+      menu.className = 'menu bounce-in-down animated';
+      backdrop.style.opacity = 1;
+    }
+    setTimeout(function() {
+      busying = false;
+    }, 500);
+  }
+</script>
+<script language='javascript' src='http://pgt.zoosnet.net/JS/LsJS.aspx?siteid=PGT79084753&float=0&lng=cn'></script>
+</html>
